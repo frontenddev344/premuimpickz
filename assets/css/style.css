@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
     --primary: #00AEEF;
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    font-family: "Sofia Sans Condensed", sans-serif;
+    font-family: "Miranda Sans", sans-serif;
     padding: 0;
     margin: 0;
     word-break: break-word;
@@ -50,7 +50,7 @@ p {
     line-height: 1.5;
     padding: 0;
     margin: 0;
-    font-family: "Sofia Sans Condensed", sans-serif;
+    font-family: "Miranda Sans", sans-serif;
     letter-spacing: 0.6px;
 }
 
@@ -68,17 +68,17 @@ ul li {
 a {
     display: inline-block;
     text-decoration: none;
-    font-family: "Sofia Sans Condensed", sans-serif;
+  font-family: "Miranda Sans", sans-serif;
 }
 
 button,
 textarea,
 input {
-    font-family: "Sofia Sans Condensed", sans-serif;
+  font-family: "Miranda Sans", sans-serif;
 }
 
 input {
-    font-family: "Sofia Sans Condensed", sans-serif;
+  font-family: "Miranda Sans", sans-serif;
 }
 
 img {
@@ -684,7 +684,7 @@ button.scroll_down::after {
 .image_text_content p {
     max-width: 50rem;
     line-height: 1.7;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .badge_heading {
     font-size: 1.2rem !important;
@@ -1011,6 +1011,145 @@ vertical-align: middle;
 /* footer end  */
 
 
+/* Shirts Page CSS Start */
+.sub_banner {
+    height: 30.875rem;
+    background-color: rgba(0 0 0/60%);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner_wrap {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner_content h1 {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1.4;
+    max-width: 40.625rem;
+    letter-spacing: 0.0313rem;
+    text-transform: capitalize;
+}
+
+.sub_banner .banner_wrap {
+    margin-top: 6rem;
+}
+
+
+
+.players_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.875rem;
+}
+
+.player_card {
+    background: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    border: 0.0625rem solid #e5e7eb;
+    position: relative;
+}
+
+.player_card_media {
+    background: #f9fafb;
+    padding: 0.75rem;
+}
+
+.player_card_img img {
+    width: 100%;
+    max-height: 16.875rem;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.player_card:hover .player_card_img img {
+    transform: scale(1.05);
+}
+
+
+.player_overlay {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: rgb(0 174 239 / 10%);
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.player_overlay.overlay1 {
+    top: 0;
+    left: 0;
+    transform: translate(-100%, -100%);
+}
+
+.player_overlay.overlay2 {
+    top: 0;
+    right: 0;
+    transform: translate(100%, -100%);
+}
+
+.player_overlay.overlay3 {
+    bottom: 0;
+    left: 0;
+    transform: translate(-100%, 100%);
+}
+
+.player_overlay.overlay4 {
+    bottom: 0;
+    right: 0;
+    transform: translate(100%, 100%);
+}
+
+.player_card_media:hover .player_overlay {
+    transform: translate(0, 0);
+}
+
+
+.player_card_content {
+    padding: 1.125rem;
+}
+
+.player_card_title {
+    font-size: 1.8rem;
+    margin-bottom: 0.375rem;
+    color: #111;
+    font-weight: 600;
+}
+
+.player_card_signed {
+    color:var(--primary);
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.player_card_desc {
+    font-size: 1rem;
+    color: #111;
+    line-height: 1.5;
+    margin-bottom: 0.9375rem;
+    min-height: 75px;
+    font-weight: 500;
+}
+
+
+
+/* Shirts Page CSS End */
+
 /* Cookies CSS Start */
 .cookie-alert {
     position: fixed;
@@ -1058,3 +1197,5 @@ vertical-align: middle;
 }
 
 /* Cookies CSS End */
+
+
