@@ -6,10 +6,10 @@
     --text: #2f333b;
     --footer: #071737;
     --bg-light: #f2f6ff;
-    --btn:#00AEEF;
-    --btn-hover:#1BC4FF;
-    --white:#fff;
-    --body:#0B0B0B;
+    --btn: #00AEEF;
+    --btn-hover: #1BC4FF;
+    --white: #fff;
+    --body: #0B0B0B;
 }
 
 /* Global CSS Start */
@@ -68,17 +68,17 @@ ul li {
 a {
     display: inline-block;
     text-decoration: none;
-  font-family: "Miranda Sans", sans-serif;
+    font-family: "Miranda Sans", sans-serif;
 }
 
 button,
 textarea,
 input {
-  font-family: "Miranda Sans", sans-serif;
+    font-family: "Miranda Sans", sans-serif;
 }
 
 input {
-  font-family: "Miranda Sans", sans-serif;
+    font-family: "Miranda Sans", sans-serif;
 }
 
 img {
@@ -265,7 +265,7 @@ span.theme {
     display: inline-flex;
     border: none;
     text-align: center;
-    background-color:var(--btn);
+    background-color: var(--btn);
     color: var(--white);
     font-size: 1.1rem;
     font-weight: 600;
@@ -276,7 +276,7 @@ span.theme {
     align-items: center;
     border-radius: 1.875rem;
     justify-content: center;
-    border:1px solid transparent;
+    border: 1px solid transparent;
 }
 
 
@@ -666,10 +666,12 @@ button.scroll_down::after {
     font-weight: 600;
     font-size: 2.5rem;
 }
+
 .image_text_left ul li {
     list-style-type: disc;
     margin-left: 1rem;
 }
+
 .image_text_para {
     color: #555;
     font-size: 1.1rem;
@@ -687,7 +689,8 @@ button.scroll_down::after {
     font-size: 1.1rem;
 }
 
-.image_text_content h2,.image_text_content h3  {
+.image_text_content h2,
+.image_text_content h3 {
     font-size: 2.5rem;
 }
 
@@ -695,6 +698,7 @@ button.scroll_down::after {
     font-size: 1.2rem !important;
     color: var(--primary);
 }
+
 /* Featured Section CSS End */
 
 /* Home Authenticity CSS Start */
@@ -724,9 +728,11 @@ button.scroll_down::after {
     color: #fff;
     padding: 4rem 2rem;
 }
+
 .why_trust_us_cards_content p {
     font-size: 1.1rem;
 }
+
 .why_trust_us_bottom_row {
     border-top: 3px solid var(--primary);
 }
@@ -734,6 +740,7 @@ button.scroll_down::after {
 .why_trust_us_amenities {
     padding: 2rem;
 }
+
 .why_trust_us_amenities p {
     font-size: 1.2rem;
 }
@@ -765,6 +772,7 @@ button.scroll_down::after {
 .no_padding {
     padding: 0;
 }
+
 .common_overlay {
     position: relative;
     overflow: hidden;
@@ -891,8 +899,8 @@ button.scroll_down::after {
 }
 
 .footer-logo a img {
-max-width: 5.625rem;
-vertical-align: middle;
+    max-width: 5.625rem;
+    vertical-align: middle;
 
 }
 
@@ -975,7 +983,7 @@ vertical-align: middle;
 }
 
 .social-icons li a:hover svg {
-   fill: var(--primary);
+    fill: var(--primary);
 }
 
 .footer-top h3 {
@@ -1008,12 +1016,13 @@ vertical-align: middle;
     max-width: 20.625rem;
     line-height: 1.3;
 }
+
 .footer-content {
     padding-top: 1.5rem;
     border-top: 1px solid var(--primary);
 }
 
-/* footer end  */
+/* Footer end  */
 
 
 /* Shirts Page CSS Start */
@@ -1028,6 +1037,7 @@ vertical-align: middle;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .sub_banner.large {
     height: 35.875rem;
 }
@@ -1139,7 +1149,7 @@ vertical-align: middle;
 }
 
 .player_card_signed {
-    color:var(--primary);
+    color: var(--primary);
     font-size: 1rem;
     margin-bottom: 0.625rem;
     font-weight: 600;
@@ -1171,7 +1181,7 @@ vertical-align: middle;
     overflow: hidden;
     border-left: 0.3125rem solid var(--primary);
     border-right: 0.3125rem solid var(--primary);
-    transition: 0.5s all ease-in-out ;
+    transition: 0.5s all ease-in-out;
     padding: 1.25rem;
 }
 
@@ -1201,10 +1211,12 @@ vertical-align: middle;
     border-radius: 0.125rem;
     transition: 0.3s all ease-in-out;
 }
-.jersey_page_card:hover  .jersey_page_accent_bar{
+
+.jersey_page_card:hover .jersey_page_accent_bar {
     background: var(--white);
 
 }
+
 .jersey_page_card h3 {
     margin: 0 0 0.75rem;
     font-size: 1.625rem;
@@ -1228,6 +1240,178 @@ vertical-align: middle;
 }
 
 /* Shirts Page CSS End */
+
+/* Transport Page CSS Start */
+.shipping-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5625rem;
+}
+
+.shipping-card {
+    background: var(--body);
+    border-radius: 1rem;
+    padding: 1.5625rem 1.25rem;
+    position: relative;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    min-height: 17.8125rem;
+    transition: 0.4s all ease-in-out
+}
+
+.shipping-card:hover {
+    transform: translateY(-0.3125rem);
+    border-color: rgba(240, 90, 40, 0.4);
+}
+
+.shipping-badge {
+    position: absolute;
+    top: 0.9375rem;
+    left: 0.9375rem;
+    width: 2.375rem;
+    height: 2.375rem;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    animation: badgeBreathe 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+
+@keyframes badgeBreathe {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(240, 90, 40, 0.0);
+    }
+
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0.375rem 1.125rem var(--primary);
+    }
+}
+
+.shipping-content {
+    margin-top: 2.5rem;
+}
+
+.shipping-title {
+    margin: 0 0 0.625rem;
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+}
+
+.shipping-text {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.shipping-list {
+    padding-left: 1.125rem;
+    margin: 0.625rem 0;
+}
+
+.shipping-list li {
+    margin-bottom: 0.3125rem;
+}
+
+.shipping-highlight {
+    margin-top: 0.625rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Transport Page CSS End */
+
+/* Contact Page CSS Start  */
+.bg_dark .home_explore_wrap .row {
+    background-color: #fff;
+}
+
+.contact-form {
+    border-radius: 1.25rem 0;
+    box-shadow: 0 4px 8px #2c3e50;
+    padding: 1.25rem;
+}
+
+.contact_sec .container>.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-title {
+    margin-bottom: 1.25rem;
+}
+
+.contact-form input {
+    width: 80%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    padding: 0.625rem;
+    color: #fff;
+}
+
+.form-control:focus {
+    color: #2c3e50;
+    background-color: transparent;
+
+
+}
+
+.newsletter-wrap input:focus,
+.newsletter-wrap textarea:focus {
+    border-color: var(--btn-hover);
+}
+
+.newsletter-wrap input,
+.newsletter-wrap textarea {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    padding: 0.625rem;
+    color: #2c3e50;
+    font-size: 1rem;
+    font-weight: 400;
+    resize: none;
+}
+
+.newsletter-wrap input::placeholder,
+.newsletter-wrap textarea::placeholder {
+    color: var(--btn-hover);
+    opacity: 1;
+}
+
+.newsletter-wrap input:focus::placeholder,
+.newsletter-wrap textarea:focus::placeholder {
+    color: #2c3e50;
+}
+
+.about-cards ul li {
+    margin-left: 1.25rem;
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+}
+
+.about-cards p a {
+    color: #b154f0;
+}
+
+/* Contact Page CSS End  */
+
+
+
 
 /* Cookies CSS Start */
 .cookie-alert {
@@ -1276,5 +1460,3 @@ vertical-align: middle;
 }
 
 /* Cookies CSS End */
-
-
