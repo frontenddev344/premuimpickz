@@ -231,7 +231,7 @@ span.theme {
 }
 
 .bg_dark {
-    background-color: var(--footer);
+    background-color: var(--body);
 }
 
 .bg_light {
@@ -276,6 +276,7 @@ span.theme {
     align-items: center;
     border-radius: 1.875rem;
     justify-content: center;
+    border:1px solid transparent;
 }
 
 
@@ -307,6 +308,7 @@ span.theme {
 .butn:hover {
     color: var(--primary);
     box-shadow: none;
+    border-color: var(--primary);
 
 }
 
@@ -611,7 +613,6 @@ button.scroll_down::after {
 }
 
 .marquee-wrapper {
-    max-width: 75rem;
     width: 100%;
     overflow: hidden;
     padding: 1.875rem 0;
@@ -665,6 +666,10 @@ button.scroll_down::after {
     font-weight: 600;
     font-size: 2.5rem;
 }
+.image_text_left ul li {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
 .image_text_para {
     color: #555;
     font-size: 1.1rem;
@@ -690,7 +695,8 @@ button.scroll_down::after {
 /* Home Authenticity CSS Start */
 .why_trust_us_cards {
     overflow: hidden;
-    border: 3px solid var(--primary);
+    border-top: 5px solid var(--primary);
+    border-bottom: 5px solid var(--primary);
     border-radius: 1.25rem;
 }
 
@@ -722,6 +728,9 @@ button.scroll_down::after {
 
 .why_trust_us_amenities {
     padding: 2rem;
+}
+.why_trust_us_amenities p {
+    font-size: 1.2rem;
 }
 
 .why_trust_us_amenities ul {
@@ -794,9 +803,213 @@ button.scroll_down::after {
     transform: translate(0, 0);
 }
 
-/* Why Trust Us CSS End */
-
 /* Home Authenticity CSS End */
+
+
+/* Newsletter CSS Start */
+.newsletter-section {
+    padding: 6.25rem 0;
+    text-align: center;
+    background-image: url(../images/newsletter_bg.png);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+
+.newsletter-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.newsletter-text {
+    font-size: 1.1rem;
+    max-width: 43.75rem;
+    margin: 0 auto 1.875rem auto;
+    line-height: 1.6;
+}
+
+.newsletter_content {
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: transparent;
+    backdrop-filter: blur(0.625rem);
+    padding: 1.25rem;
+    box-shadow: var(--primary) 0rem 0.4375rem 1.8125rem 0rem;
+    border-radius: 1.25rem;
+}
+
+/* Newsletter CSS End */
+
+/* footer start  */
+
+.footer-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    border-bottom: 0.0625rem solid var(--primary);
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-features .feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.footer-features span {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.footer-features p {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.site-footer {
+    color: #fff;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: #ffffffdb;
+    font-weight: 400;
+    margin: 0;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.footer-logo a img {
+max-width: 5.625rem;
+vertical-align: middle;
+
+}
+
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.9375rem;
+}
+
+.footer-top h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1.875rem;
+}
+
+.footer-links {
+    padding-left: 1.75rem;
+}
+
+.footer-contact {
+    padding-left: 1.125rem;
+}
+
+.footer-links li a,
+.footer-contact li {
+    color: #ffffffdb;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.015rem;
+    margin-bottom: 0.9375rem;
+    transition: all 0.2s linear;
+}
+
+.footer-links li a:hover,
+.footer-contact li:hover {
+    color: var(--primary);
+}
+
+.footer-contact li i {
+    margin-right: 0.625rem;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.0625rem solid rgba(0 174 239/60%);
+    padding: 1.25rem 0;
+    margin-top: 2.1875rem;
+}
+
+.footer-bottom p {
+    color: #fff;
+}
+
+.social-icons ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 10.375rem;
+}
+
+.social-icons li a {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 0.0625rem solid #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.375rem;
+    transition: all 0.2s linear;
+    padding: 0.625rem;
+}
+
+.social-icons li a:hover {
+    transform: translateY(-0.25rem);
+}
+
+.social-icons li a:hover svg {
+   fill: var(--primary);
+}
+
+.footer-top h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.ssl_logo {
+    height: 3.75rem;
+    width: 8.75rem;
+}
+
+.ssl_logo_inner {
+    height: 100%;
+    width: 100%;
+}
+
+.social-icons li a svg {
+    height: 100%;
+    width: 100%;
+    fill: #fff;
+    transition: all 0.2s linear;
+}
+
+.footer-logo h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-width: 20.625rem;
+    line-height: 1.3;
+}
+.footer-content {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--primary);
+}
+
+/* footer end  */
+
 
 /* Cookies CSS Start */
 .cookie-alert {
