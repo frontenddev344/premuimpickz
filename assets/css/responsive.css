@@ -51,7 +51,9 @@
 
 
 @media screen and (max-width: 991px) {
-
+    .why_trust_us_img_outer {
+        height: 25rem;
+    }
 
 
 }
@@ -60,7 +62,9 @@
     html {
         font-size: 14px;
     }
-
+    .why_trust_us_img_outer {
+        height: 20rem;
+    }
 
 }
 

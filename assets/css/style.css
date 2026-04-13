@@ -307,6 +307,7 @@ span.theme {
 .butn:hover {
     color: var(--primary);
     box-shadow: none;
+
 }
 
 .butn:hover::after,
@@ -602,6 +603,53 @@ button.scroll_down::after {
 
 /* Banner CSS End */
 
+/* Marquee Section CSS Start */
+.marquee-section {
+    display: flex;
+    justify-content: center;
+    background: #111;
+}
+
+.marquee-wrapper {
+    max-width: 75rem;
+    width: 100%;
+    overflow: hidden;
+    padding: 1.875rem 0;
+
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    width: max-content;
+    animation: scrollMarquee 18s linear infinite;
+}
+
+.badge {
+    background: var(--primary);
+    border-radius: 3.125rem;
+    padding: 0.625rem 1.125rem;
+    margin-right: 0.9375rem;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    white-space: nowrap;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.08);
+}
+
+
+@keyframes scrollMarquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Marquee Section CSS End */
+
 
 /* Featured Section CSS Start */
 .image_text_box {
@@ -640,8 +688,6 @@ button.scroll_down::after {
 /* Featured Section CSS End */
 
 /* Home Authenticity CSS Start */
-/* Why Trust Us CSS Start */
-
 .why_trust_us_cards {
     overflow: hidden;
     border: 3px solid var(--primary);
@@ -655,9 +701,6 @@ button.scroll_down::after {
     overflow: hidden;
 }
 
-.why_trust_us_img_outer:hover .common_overlay {
-    left: 0;
-}
 
 .why_trust_us_img {
     height: 100%;
@@ -670,7 +713,9 @@ button.scroll_down::after {
     color: #fff;
     padding: 4rem 2rem;
 }
-
+.why_trust_us_cards_content p {
+    font-size: 1.2rem;
+}
 .why_trust_us_bottom_row {
     border-top: 3px solid var(--primary);
 }
@@ -707,20 +752,46 @@ button.scroll_down::after {
     padding: 0;
 }
 .common_overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.common_overlay .box {
     position: absolute;
-    left: -100%;
+    width: 50%;
+    height: 50%;
+    background: rgb(0 174 239/10%);
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.common_overlay .box1 {
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(255 255 255/10% );
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1.25rem;
-    transition: left 0.5s ease;
-    text-align: center;
+    left: 0;
+    transform: translate(-100%, -100%);
+}
+
+.common_overlay .box2 {
+    top: 0;
+    right: 0;
+    transform: translate(100%, -100%);
+}
+
+
+.common_overlay .box3 {
+    bottom: 0;
+    left: 0;
+    transform: translate(-100%, 100%);
+}
+
+.common_overlay .box4 {
+    bottom: 0;
+    right: 0;
+    transform: translate(100%, 100%);
+}
+
+.common_overlay:hover .box {
+    transform: translate(0, 0);
 }
 
 /* Why Trust Us CSS End */
