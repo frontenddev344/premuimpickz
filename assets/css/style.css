@@ -686,6 +686,11 @@ button.scroll_down::after {
     line-height: 1.7;
     font-size: 1.1rem;
 }
+
+.image_text_content h2,.image_text_content h3  {
+    font-size: 2.5rem;
+}
+
 .badge_heading {
     font-size: 1.2rem !important;
     color: var(--primary);
