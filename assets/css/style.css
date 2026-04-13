@@ -1023,6 +1023,10 @@ vertical-align: middle;
     background-size: cover;
     background-repeat: no-repeat;
 }
+.sub_banner.large {
+    height: 35.875rem;
+}
+
 
 .banner_wrap {
     height: 100%;
