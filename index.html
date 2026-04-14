@@ -722,19 +722,6 @@
         </div>
     </div>
 
-
-    <div id="loader">
-        <div class="loader-content">
-            <div class="puck"></div>
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-            <p class="loading-text">Loading...</p>
-        </div>
-    </div>
-
-
-
     <script>
         (function () {
             "use strict";
@@ -743,16 +730,16 @@
             var acceptBtn = document.querySelector(".accept-cookies");
             var rejectBtn = document.querySelector(".reject-cookies");
 
-            // If elements not found, stop script
+
             if (!cookieAlert || !acceptBtn || !rejectBtn) return;
 
-            // Check cookie on page load
+
             var consent = getCookie("cookieConsent");
 
             if (!consent) {
-                cookieAlert.classList.add("show"); // show if no choice made
+                cookieAlert.classList.add("show");
             } else {
-                cookieAlert.classList.remove("show"); // hide if already decided
+                cookieAlert.classList.remove("show");
             }
 
             // Accept cookies
@@ -761,7 +748,7 @@
                 cookieAlert.classList.remove("show");
             });
 
-            // Reject cookies
+
             rejectBtn.addEventListener("click", function () {
                 setCookie("cookieConsent", "rejected", 60);
                 cookieAlert.classList.remove("show");
@@ -769,7 +756,7 @@
 
         })();
 
-        // Set cookie
+
         function setCookie(name, value, days) {
             var d = new Date();
             d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -777,7 +764,7 @@
             document.cookie = name + "=" + value + ";" + expires + ";path=/;SameSite=Lax";
         }
 
-        // Get cookie
+
         function getCookie(name) {
             var cname = name + "=";
             var decodedCookie = decodeURIComponent(document.cookie);
