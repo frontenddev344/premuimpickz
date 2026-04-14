@@ -826,6 +826,8 @@ button.scroll_down::after {
     background-image: url(../images/newsletter_bg.png);
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .newsletter-title {
@@ -1150,7 +1152,7 @@ button.scroll_down::after {
 
 .player_card_signed {
     color: var(--primary);
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin-bottom: 0.625rem;
     font-weight: 600;
     text-transform: uppercase;
