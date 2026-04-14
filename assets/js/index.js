@@ -57,7 +57,7 @@ let topButton = document.getElementById("topBtn");
 
 
 window.onscroll = function () {
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 400) {
         topButton.style.display = "block";
     } else {
         topButton.style.display = "none";
