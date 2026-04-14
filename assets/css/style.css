@@ -1394,17 +1394,6 @@ button.scroll_down::after {
 .form-title {
     margin-bottom: 1.25rem;
 }
-
-.contact-form input {
-    width: 80%;
-    background: transparent;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid var(--body);
-    padding: 0.625rem;
-    color: #fff;
-}
-
 .form-control:focus {
     color: #2c3e50;
     background-color: transparent;
@@ -1414,7 +1403,7 @@ button.scroll_down::after {
 
 .newsletter-wrap input:focus,
 .newsletter-wrap textarea:focus {
-    border-color: var(--btn-hover);
+    border-color: var(--body);
 }
 
 .newsletter-wrap input,
