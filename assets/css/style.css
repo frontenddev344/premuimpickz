@@ -1417,8 +1417,11 @@ button.scroll_down::after {
 
 .shipping-list li {
     margin-bottom: 0.3125rem;
+    list-style-type: disc;
 }
-
+.shipping-list li::marker {
+color: var(--primary);
+}
 .shipping-highlight {
     margin-top: 0.625rem;
     font-weight: bold;
