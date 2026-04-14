@@ -948,10 +948,7 @@ button.scroll_down::after {
 .footer-logo a img {
     max-width: 5.625rem;
     vertical-align: middle;
-
 }
-
-
 .footer-top {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
