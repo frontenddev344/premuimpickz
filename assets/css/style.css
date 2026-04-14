@@ -274,7 +274,7 @@ span.theme {
     padding: 0.9375rem 1.875rem;
     overflow: hidden;
     align-items: center;
-    border-radius: 1.875rem;
+    border-radius: 2.5rem;
     justify-content: center;
     border: 1px solid transparent;
 }
@@ -1356,7 +1356,7 @@ button.scroll_down::after {
     background: transparent;
     outline: none;
     border: none;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--body);
     padding: 0.625rem;
     color: #fff;
 }
@@ -1379,9 +1379,9 @@ button.scroll_down::after {
     background: transparent;
     outline: none;
     border: none;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--body);
     padding: 0.625rem;
-    color: #2c3e50;
+    color: var(--body);
     font-size: 1rem;
     font-weight: 400;
     resize: none;
@@ -1389,13 +1389,13 @@ button.scroll_down::after {
 
 .newsletter-wrap input::placeholder,
 .newsletter-wrap textarea::placeholder {
-    color: var(--btn-hover);
+    color: var(--body);
     opacity: 1;
 }
 
 .newsletter-wrap input:focus::placeholder,
 .newsletter-wrap textarea:focus::placeholder {
-    color: #2c3e50;
+    color: var(--body);
 }
 
 .about-cards ul li {
