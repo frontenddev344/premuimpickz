@@ -52,22 +52,23 @@ AOS.init({
 
 
 
-
+// Scroll To Top Button JS Start
 let topButton = document.getElementById("topBtn");
 
-// Show button when user scrolls down
+
 window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 200) {
         topButton.style.display = "block";
     } else {
         topButton.style.display = "none";
     }
 };
 
-// Scroll to top when clicked
+
 topButton.onclick = function () {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 };
+// Scroll To Top Button JS End
