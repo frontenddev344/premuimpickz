@@ -738,10 +738,63 @@ button.scroll_down::after {
 .image_text_content h3 {
     font-size: 2.5rem;
 }
-
+.badge_heading_wrapper {
+    text-align: center;
+}
 .badge_heading {
     font-size: 1.2rem !important;
     color: var(--primary);
+    position: relative;
+    display: inline-block;
+    padding: 6px 16px;
+}
+
+
+.badge_heading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid var(--primary);
+    border-top: 3px solid var(--primary);
+}
+
+
+.badge_heading::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid var(--primary);
+    border-top: 3px solid var(--primary);
+}
+
+
+.badge_heading span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+
+
+.badge_heading span::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
 }
 
 /* Featured Section CSS End */
