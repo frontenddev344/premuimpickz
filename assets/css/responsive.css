@@ -176,7 +176,9 @@
     .why_trust_us_cards_content {
         padding: 3rem 1rem;
     }
-
+    .sub_banner.large {
+        height: 35.875rem;
+    }
 }
 
 @media screen and (max-width:480px) {
