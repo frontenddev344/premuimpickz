@@ -1077,6 +1077,7 @@ button.scroll_down::after {
 
 .social-icons li a:hover {
     transform: translateY(-0.25rem);
+    border-color: var(--primary);
 }
 
 .social-icons li a:hover svg {
