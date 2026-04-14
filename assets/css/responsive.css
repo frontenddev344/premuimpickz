@@ -85,6 +85,9 @@
     .jersey_page_card {
         width: 47%;
     }
+    .hero h1 {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -107,6 +110,9 @@
     }
     .jersey_page_card {
         width: 100%;
+    }
+    .py-7 {
+        padding: 3.375rem 0;
     }
 }
 
