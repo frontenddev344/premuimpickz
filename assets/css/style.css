@@ -1461,7 +1461,8 @@ button.scroll_down::after {
     background: var(--white);
     padding: 1.875rem;
     border-radius: 0.75rem;
-    margin-top: -7.5rem;
+    margin-top: -5.5rem;
+    border: 5px solid var(--primary);
 }
 
 .last-update-content p a {

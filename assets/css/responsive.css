@@ -160,6 +160,9 @@
     .player_card_desc {
         min-height: 0;
     }
+    .why_trust_us_cards_content {
+        padding: 3rem 1rem;
+    }
 
 }
 
