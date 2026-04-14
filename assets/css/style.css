@@ -1609,3 +1609,80 @@ button.scroll_down::after {
 }
 
 /* Cookies CSS End */
+
+
+/* Fullscreen Loader */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ffffff; /* white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* Center Content */
+  .loader-content {
+    text-align: center;
+  }
+  
+  /* 🏒 Hockey Puck */
+  .puck {
+    width: 60px;
+    height: 60px;
+    background: #111;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    box-shadow: 0 6px 0 #000, 0 0 15px rgba(0,174,239,0.5);
+    animation: bounce 0.7s infinite ease-in-out;
+  }
+  
+  /* Bounce Animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-45px);
+    }
+  }
+  
+  /* 📊 Progress Bar */
+  .progress-bar {
+    width: 220px;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto 15px;
+  }
+  
+  .progress {
+    width: 0%;
+    height: 100%;
+    background: #00aeef;
+    animation: load 2.5s ease forwards;
+  }
+  
+  /* Loading Animation */
+  @keyframes load {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+  
+  /* 📝 Text */
+  .loading-text {
+    color: #00aeef;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: fadeText 1.5s infinite;
+  }
+  
+  /* Text Fade */
+  @keyframes fadeText {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
