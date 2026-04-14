@@ -1640,7 +1640,7 @@ color: var(--primary);
 }
 
 .cookie-alert .card-text a {
-    color: var(--footer);
+    color: var(--primary);
     text-decoration: underline;
     text-underline-offset: 5px;
 }
