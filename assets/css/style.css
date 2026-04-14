@@ -258,7 +258,7 @@ span.theme {
 
 
 /* Button CSS Start */
-.butn {
+/* .butn {
     position: relative;
     z-index: 2;
     vertical-align: middle;
@@ -316,8 +316,53 @@ span.theme {
 .butn:hover::before {
     height: 35.625rem;
     width: 35.625rem;
+} */
+
+
+
+.butn {
+    padding: 0.625rem 1.5625rem;
+    font-weight: 500;
+    background: var(--primary);
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    text-align: center;
+    overflow: hidden;
 }
 
+.butn:after {
+    position: absolute;
+    content: "";
+    width: 0;              
+    height: 100%;         
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #fff;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.butn:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.butn:hover:after {
+    width: 100%;          /* expand to full width */
+}
+
+.butn:active {
+    top: 2px;
+}
 /* Button CSS End*/
 
 
