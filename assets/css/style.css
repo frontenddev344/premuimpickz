@@ -1409,7 +1409,11 @@ button.scroll_down::after {
 .about-cards p a {
     color: #b154f0;
 }
-
+.image_text_box.about .image_text_img {
+    max-height: 100%;
+    object-fit: cover;
+    height: 100%;
+}
 /* Contact Page CSS End  */
 
 /* Privacy Pages CSS Start */
